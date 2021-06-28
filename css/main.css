@@ -1,0 +1,166 @@
+/* 
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografia
+4. Visuales
+5. Otros 
+*/
+:root {
+    /* Variables como: Colores... */
+    --black: #000;
+    --blue: #073b4c;
+    --blue-light: #118ab2;
+    --platinum: #e5e5e5;
+    --white: #fff
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--white);
+    background-color: var(--blue);
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 400px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #073b4c 15.69%, #118ab2 100%);
+}
+header nav {
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header--nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header--nav a {
+    text-decoration: none;
+    color:var(--white);
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.header--nav li {
+    margin-left: 15px;
+    list-style: none;
+}
+header img {
+    width: 200px;
+    height: 130px;
+    margin-top: -20px;
+    position: relative;
+    align-self: center;
+}
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: -20px;
+    text-align: center;
+    align-self: center;
+}
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+.header--title-container p {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--white);
+}
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 229px/2);
+    top: calc(100% - 48px/2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--white);
+    /*Sombra*/
+    box-shadow: 0px 4px 80px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/Vector.svg');
+}
+.portfolio__container {
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.portfolio__container li {
+    list-style: none;
+    text-align: center;
+    width: 30%;;
+    padding: 20px;
+    margin: 15px;
+    min-width: 320px;
+    box-shadow: 0px 4px 80px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.portfolio__container img {
+    width: 100%;
+    min-width: 280px;
+    height: 300px;
+}
+.portfolio__container li a {
+    text-decoration: none;
+    color: var(--black);
+}
+.portfolio__container--title {
+    position: relative;
+    bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.portfolio__container--description {
+    position: relative;
+    top: 5px;
+    font-size: 1.6rem;
+}
+.portfolio__container li:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    transition: 450ms;
+}
+
+
